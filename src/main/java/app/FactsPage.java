@@ -44,21 +44,21 @@ public class FactsPage implements Handler {
         html += "</script>";
            
 
-        html += "<h1>6</h1>";
-        html += "<h1>   WEEKS</h1>";
+        html += "<h1 class= top-space>6</h1>";
+        html += "<h1 class= bottom-space>   WEEKS</h1>";
         html += "<p>Is how long it can take for severe cases of</p>";
         html += "<p>COVID-19 to recover, if those who fell ill to</p>";
-        html += "<p>those severe cases survive</p>";
+        html += "<p class=bottom-space>those severe cases survive</p>";
 
         html += "<h1>ONE</h1>";
         html += "<h1>IN</h1>";
-        html += "<h1>EIGHT</h1>";
+        html += "<h1 class=bottom-space>EIGHT</h1>";
         html += "<p>People suffer from long term health effects</p>";
-        html += "<p>following a recovery of COVID-19</p>";
+        html += "<p class=bottom-space>following a recovery of COVID-19</p>";
 
-        html += "<h1>3,382,520</h1>";
-        html += "<p>People have died as a result of COVID-19</p>";
-        
+        html += "<h1 class=bottom-space>3,382,520</h1>";
+        html += "<p class = bottom-space>People have died as a result of COVID-19</p>";
+
 
 
 

@@ -26,7 +26,15 @@ p
 	font-size: 200%
 }
 
+.bottom-space
+{
+	margin-bottom:700px;
+}
 
+.top-space
+{
+	padding-top: 200px;
+}
 
 .sidebar 
 {
