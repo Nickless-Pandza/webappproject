@@ -22,7 +22,7 @@ public class Index implements Handler {
           html += "<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>×</a>";
           html += "<a href='/''>Landing Page</a>";
           html += "<a href='/FactsPage'>Facts Page</a>";
-          html += "<a href='#''>Blank</a>";
+          html += "<a href='/DeathsPage''>Deaths Page</a>";
           html += "<a href='#'>Blank</a>";
         html += "</div>";
 

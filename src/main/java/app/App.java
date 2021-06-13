@@ -31,7 +31,8 @@ public class App {
         
         // ADD ALL OF YOUR WEBPAGES HERE
         app.get(Index.URL, new Index());
-        app.get(FactsPage.URL, new FactsPage());      
+        app.get(FactsPage.URL, new FactsPage());  
+        app.get(DeathsPage.URL, new DeathsPage());
 
     }
 
