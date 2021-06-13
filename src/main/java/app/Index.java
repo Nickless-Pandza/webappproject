@@ -15,36 +15,39 @@ public class Index implements Handler {
     public void handle(Context context) throws Exception {
         // Create a simple HTML webpage in a String
         String html = "<html>";
+        html += "<link rel='stylesheet' type='text/css' href='common.css' />";
+        html += "<body>";
+        html += "<meta charset='utf-8'>";
+        html += "<div id='mySidebar' class='sidebar'>";
+          html += "<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>×</a>";
+          html += "<a href='/''>Landing Page</a>";
+          html += "<a href='/FactsPage'>Facts Page</a>";
+          html += "<a href='#''>Blank</a>";
+          html += "<a href='#'>Blank</a>";
+        html += "</div>";
 
-        html += "<body>
+        
+        html += "<div id='main'>";
+          html += "<button class='openbtn' onclick='openNav()'>☰</button>";
+        html += "</div>";
+        
+        html += "<script>";
+        html += "function openNav() {";
+          html += "document.getElementById('mySidebar').style.width = '250px';";
+          html += "document.getElementById('main').style.marginLeft = '250px';}";
 
-        <div id='mySidebar' class='sidebar'>
-          <a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>×</a>
-          <a href='#''>About</a>
-          <a href='#'>Services</a>
-          <a href='#''>Clients</a>
-          <a href='#'>Contact</a>
-        </div>
         
-        <div id='main'>
-          <button class='openbtn' onclick='openNav()'>☰ Open Sidebar</button>  
-          <h2>Collapsed Sidebar</h2>
-          <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
-        </div>
-        
-        <script>
-        function openNav() {
-          document.getElementById('mySidebar').style.width = '250px';
-          document.getElementById('main').style.marginLeft = '250px';
-        }
-        
-        function closeNav() {
-          document.getElementById('mySidebar').style.width = '0';
-          document.getElementById('main').style.marginLeft= '0';
-        }
-        </script>
+        html += "function closeNav() {";
+          html += "document.getElementById('mySidebar').style.width = '0';";
+          html += "document.getElementById('main').style.marginLeft= '0';}";
+        html += "</script>";
            
-        </body>";
+        html += "</body>";
+
+        html += "</html>";
+
+        //Do not delete
+        context.html(html);
     }
 
 }
