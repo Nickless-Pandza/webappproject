@@ -34,6 +34,8 @@ public class App {
         app.get(FactsPage.URL, new FactsPage());  
         app.get(DeathsPage.URL, new DeathsPage());
 
+        //Pages with inputs go here
+        app.post(DeathsPage.URL, new DeathsPage());
     }
 
 }
